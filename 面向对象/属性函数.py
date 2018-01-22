@@ -4,8 +4,13 @@ class Attrbute:
 		self.name = "race"
 
 	@property
-	def get_name(self):
+	def _name(self):
 		return "my name is %s" %self.name
 
+	@_name.setter
+	def _name(self,name):
+		self.name = name
+
 attr = Attrbute()
-print(attr.get_name)	
+attr._name = "alex"
+print(attr._name)	
