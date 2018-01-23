@@ -15,6 +15,7 @@ finally:
 
 # 主动触发异常
 # raise TypeError('类型错误')
+#
 
 count = 0
 while True:
